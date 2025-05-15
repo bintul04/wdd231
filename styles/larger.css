@@ -1,0 +1,59 @@
+@media (min-width: 768px) {
+    .section-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+        /* Make the first card (Course Work) take up more space */
+    .section-row .card:nth-child(1) {
+        flex: 2;
+        }
+    
+        /* Second card (Freetown) gets less space */
+    .section-row .card:nth-child(2) {
+        flex: 1;
+        }
+
+    .card {
+        min-width: 250px;
+        margin: 10px;
+    }
+
+    .course-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .course-grid div {
+        flex: 1 1 30%;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .nav__links {
+        position: static;
+        transform: none;
+        max-height: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+        pointer-events: auto;
+        gap: 8rem;
+    }
+
+    .nav__links a {
+        font-size: 1.3rem;
+    }
+
+    .nav__links a:hover {
+        text-decoration: underline;
+        color: var(--accent-color);
+        transition: color 0.3s ease;
+    }
+}

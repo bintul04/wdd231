@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive page with optimized images and dynamic content.">
+    <meta name="author" content="Bintu Lukulay">
+    <title>Course Home Page</title>
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/profile.jpg" alt="Portrait of Bintu Lukulay" width="50" height="50">
+        </div>
+        <h1>Bintu Lukulay</h1>
+    </header>
+
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="#">FASHION</a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#catalogue">CATALOGUE</a></li>
+            <li><a href="#fashion">FASHION</a></li>
+            <li><a href="#favorite">FAVORITE</a></li>
+            <li><a href="#lifestyle">LIFESTYLE</a></li>
+            <li><button class="btn">SIGN UP</button></li>
+        </ul>
+        </nav>
+
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="week2-chamber.html">Chamber</a></li>
+                <li><a href="week6-final.html">Final</a></li>
+                <li><a href="https://github.com/bintul04" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/bintul04" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="section-row">
+            <div class="card">
+                <h2>Course Work</h2>
+                <ul class="course-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Freetown Sierra Leone</h2>
+                <img src="images/cotton.jpg" alt="Cotton Tree in Freetown Sierra Leone" width="400" height="300">
+                <p>S/L Cotton Tree</p>
+            </div>
+        </div>
+
+        <section class="certificate-section">
+            <div class="card">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="course-buttons">
+                    <button>All</button>
+                    <button>CSE</button>
+                    <button>WDD</button>
+                </div>
+                <div class="course-grid">
+                    <div>CSE 110</div>
+                    <div>WDD 130</div>
+                    <div>CSE 111</div>
+                    <div>CSE 210</div>
+                    <div>WDD 131</div>
+                    <div>WDD 231</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Bintu Lukulay🌸 Freetown 🇸🇱</p>
+        <p id="lastUpdate"></p>
+    </footer>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("year").textContent = currentYear;
+
+        const lastModifiedDate = document.lastModified;
+        document.getElementById("lastUpdate").textContent = "Last updated: " + lastModifiedDate;
+    </script>
+
+</body>
+
+</html>

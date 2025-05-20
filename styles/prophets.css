@@ -1,0 +1,81 @@
+Basic Reset
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and page styling */
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #D3BBDD;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+
+header,
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b5563;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #3d1686;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap:5px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #e6ddea;
+}
+
+section {
+    background-color: rgb(215, 205, 235);
+    border-radius: 1px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(68, 68, 68, 0.9);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #c9a9d6;
+}
+
+section:hover {
+    transform: translateY(-6px);
+}
+
+h2 {
+    margin-bottom: 2px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #3d1686;
+}
+
+img {
+    border-radius: 1px;
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(68, 68, 68);
+}
+
+p {
+    margin: 2px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #010307;
+}
+
+footer {
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #6b7280;
+}

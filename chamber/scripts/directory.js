@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load Members
     async function loadMembers() {
         try {
-            const response = await fetch("data/members.json");
+            const response = await fetch("chamber/data/members.json");
             const members = await response.json();
 
             members.forEach(member => {

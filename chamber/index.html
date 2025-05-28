@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Empowering Sierra Leone businesses with tools, networking, and support to thrive in a dynamic local economy. Join our growing community.">
+    <meta name="author" content="Sierra Leone Chamber of Commerce">
+    <title>Sierra Leone Chamber of Commerce | Home</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sierra Leone Chamber of Commerce">
+    <meta property="og:description" content="Empowering Sierra Leone's local businesses with resources, connections, and growth opportunities.">
+    <meta property="og:image" content="https://bintul04.github.io/wdd231/chamber/images/city.jpg">
+    <meta property="og:url" content="https://bintul04.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/download_1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Scripts -->
+    <script src="scripts/scripts.js" defer=""></script>
+    <script src="scripts/toggleview.js" defer=""></script>
+    <script src="scripts/weather.js" defer=""></script>
+    <script src="scripts/spotlight.js" defer=""></script>
+    <script src="scripts/forecast.js" defer=""></script>
+
+    <meta name="theme-color" content="#3f80ff">
+</head>
+
+<body class="chamber-home" data-new-gr-c-s-check-loaded="14.1237.0" data-gr-ext-installed="">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-container">
+            <!-- Logo and Text -->
+            <div class="header-logo">
+                <img src="images/logo.jpeg" alt="Sierra Leone Chamber Logo" width="150" height="50" loading="lazy">
+                <div class="logo-text">
+                    <span class="main-text">Sierra Leone</span><br>
+                    <span class="sub-text">Chamber of Commerce</span>
+                </div>
+            </div>
+
+            <!-- Hamburger for Mobile -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="primaryNav">
+                ☰
+            </button>
+
+            <!-- Navigation -->
+            <nav id="primaryNav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="directory.html">Business Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main id="main-content" tabindex="-1">
+        <section class="hero-banner" aria-label="Welcome to Sierra Leone Chamber of Commerce">
+            <img src="images/city.jpg" alt="Freetown supreme court view" class="hero-image" width="1200" height="675"
+                loading="lazy">
+            <div class="hero-text-content">
+                <h1>Welcome to Sierra Leone</h1>
+                <h2 class="subheading">Chamber of Commerce</h2>
+                <p>Empowering our local businesses through connection, resources, and growth opportunities.</p>
+                <a href="join.html" class="btn-primary" aria-label="Join the Sierra Leone Chamber of Commerce">Join the
+                    Chamber</a>
+            </div>
+        </section>
+
+        <div class="cards-container">
+            <!-- Upcoming Events -->
+            <section class="card events-card" aria-label="Upcoming events">
+                <h2>Upcoming Events</h2>
+                <ul class="events-list">
+                    <li>
+                        <strong>Business Networking Mixer</strong> - July 30, 2025 at 5:00 PM<br>
+                        Join local entrepreneurs for an evening of networking and business growth.
+                    </li>
+                    <li>
+                        <strong>Annual Chamber Awards Gala</strong> - August 25, 2025 at 6:00 PM<br>
+                        Celebrate outstanding local businesses and leaders.
+                    </li>
+                    <li>
+                        <strong>Small Business Workshop Series</strong> - Every Friday in September<br>
+                        Free workshops on marketing, finance, Agricuture, and more.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Current Weather -->
+            <section id="current-weather" class="card current-weather-card" aria-labelledby="current-weather-title">
+                <h2 id="current-weather-title">Current Weather</h2>
+                <div id="weather" class="weather-details">
+                    <div class="current-weather-content">
+                        <img src="https://openweathermap.org/img/wn/04n@4x.png" alt="Broken clouds"
+                            style="width: 96px; height: 96px; filter: drop-shadow(0 0 5px rgba(233, 226, 226, 0.7));">
+                        <div class="weather-info" style="line-height: 1.3;">
+                            <p style="font-size: 3rem; font-weight: 700; margin: 0 0 8px 0;">30.1°C</p>
+                            <p style="font-size: 1.25rem; font-weight: 600; margin: 0 0 12px 0;">Broken clouds</p>
+                            <p style="margin: 4px 0; font-weight: 500;">
+                                <span style="color:rgb(31, 25, 2);">High:</span> 30.1°C |
+                                <span style="color:rgb(33, 37, 41);">Low:</span> 29.5°C
+                            </p>
+                            <p style="margin: 4px 0; font-weight: 500;">Humidity: 79%</p>
+                            <p style="margin: 4px 0; font-weight: 500;">Sunrise: 05:30 AM</p>
+                            <p style="margin: 4px 0; font-weight: 500;">Sunset: 05:57 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weather Forecast -->
+            <section id="weather-forecast" class="card forecast-card" aria-labelledby="forecast-title">
+                <h2 id="forecast-title">5-Day Forecast</h2>
+                <div id="forecast" class="forecast-cards">
+                    <div class="forecast-card">
+                        <div class="forecast-day-date">
+                            <div class="forecast-day">Mon</div>
+                            <div class="forecast-month">May</div>
+                        </div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Light rain" class="forecast-icon">
+                        <div class="temp">30.3°C</div>
+                        <div class="desc">Light rain</div>
+                    </div>
+                    <div class="forecast-card">
+                        <div class="forecast-day-date">
+                            <div class="forecast-day">Tue</div>
+                            <div class="forecast-month">May</div>
+                        </div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Moderate rain"
+                            class="forecast-icon">
+                        <div class="temp">27.6°C</div>
+                        <div class="desc">Moderate rain</div>
+                    </div>
+                    <div class="forecast-card">
+                        <div class="forecast-day-date">
+                            <div class="forecast-day">Wed</div>
+                            <div class="forecast-month">May</div>
+                        </div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Light rain" class="forecast-icon">
+                        <div class="temp">29.8°C</div>
+                        <div class="desc">Light rain</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Member Spotlights -->
+        <section id="member-spotlights" aria-labelledby="spotlight-title">
+            <h2 id="spotlight-title">Member Spotlights</h2>
+            <div class="spotlight-container" role="list">
+                <article class="spotlight-card">
+                    <img src="images/tech-solutions.jpeg" alt="UmTech Solutions logo">
+                    <h3>UMTECH Solutions</h3>
+                    <p><strong>Phone:</strong>+232 75 124980</p>
+                    <p><strong>Address:</strong>Freetown, Sierra Leone</p>
+                    <p><strong>Website:</strong> <a href="https://www.umtechsolutionsl.com/" target="_blank"
+                            rel="noopener">https://www.umtechsolutionsl.com/</a></p>
+                    <p><strong>Membership Level:</strong> Gold</p>
+                </article>
+                <article class="spotlight-card">
+                    <img src="images/sl-market.jpg" alt="Sierra Leone Marketing logo">
+                    <h3>Sierra Leone Marketing</h3>
+                    <p><strong>Phone:</strong>+232-75-32-90-62</p>
+                    <p><strong>Address:</strong> Big Market Ave, Freetown City</p>
+                    <p><strong>Website:</strong> <a href="https://tourismsierraleone.com/" target="_blank"
+                            rel="noopener">https://tourismsierraleone.com/</a></p>
+                    <p><strong>Membership Level:</strong> Gold</p>
+                </article>
+                <article class="spotlight-card">
+                    <img src="images/best_build_interior.jpg" alt="Interior logo">
+                    <h3>Best Built Interior</h3>
+                    <p><strong>Phone:</strong> +232-75 55-56-78</p>
+                    <p><strong>Address:</strong> 456 Syke St, Freetown, Sierra Leone</p>
+                    <p><strong>Website:</strong> <a href="https://nobili-design.com/" target="_blank"
+                            rel="noopener">https://nobili-design.com/</a></p>
+                    <p><strong>Membership Level:</strong> Silver</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="year">2025</span> Sierra Leone Chamber of Commerce</p>
+            <p>Developed by Bintu Lukulay<span aria-label="heart" role="img">❤️</span> | Last modified: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

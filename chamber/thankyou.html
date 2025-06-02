@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Sierra Leone Chamber of Commerce</title>
+    <meta name="description" content="Confirmation page for Crescent City Chamber of Commerce membership form.">
+    <meta name="author" content="Bintu Lukulay">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sierra Leone Chamber of Commerce">
+    <meta property="og:description" content="Empowering Sierra Leone's local businesses with resources, connections, and growth opportunities.">
+    <meta property="og:image" content="https://bintul04.github.io/wdd231/chamber/images/city.jpeg">
+    <meta property="og:url" content="https://bintul04.github.io/wdd231/chamber/directory.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sierra Leone Chamber of Commerce">
+    <meta name="twitter:description" content="Discover opportunities, build connections, and grow your business within a vibrant local network.">
+    <meta name="twitter:image" content="https://bintul04.github.io/wdd231/chamber/images/city.jpeg">
+
+    <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+
+    <!-- Scripts -->
+    <script src="scripts/join.js" defer=""></script>
+    <script src="scripts/toggleview.js" defer=""></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/all-styles.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+
+</head>
+
+<body class="join-page" data-new-gr-c-s-check-loaded="14.1237.0" data-gr-ext-installed="">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="images/logo.jpeg" alt="Sierra Leone Chamber Logo" width="150" height="50" loading="lazy">
+                <div class="logo-text">
+                    <span class="main-text">Sierra Leone</span><br>
+                    <span class="sub-text">Chamber of Commerce</span>
+                </div>
+            </div>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="primaryNav">☰</button>
+
+            <nav id="primaryNav" aria-label="Primary navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Business Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="thank-you-main">
+        <section class="container">
+            <h1 class="thank-you-heading">🎉 Thank You, <span id="firstNameDisplay">bintu</span>!</h1>
+            <p class="thank-you-subtext small-raised">
+                We’ve received your application. Our team will review it and contact you within 3 business days.
+                Below is a summary of the information you provided:
+            </p>
+
+            <ul id="formDataDisplay" class="form-summary">
+                <li><strong>First Name:</strong> bintu</li>
+                <li><strong>Last Name:</strong> lukulay</li>
+                <li><strong>Email:</strong> biecita25@gmail.com</li>
+                <li><strong>Mobile:</strong> +23275082042</li>
+                <li><strong>Business Name:</strong> Mhizz Bies Fashion</li>
+                <li><strong>Submitted At:</strong> 6/2/2025, 11:51:46 AM</li>
+            </ul>
+
+            <a href="index.html" class="return-home-btn">← Return to Home</a>
+
+            <p id="redirect-message" style="font-size: 0.9rem; color: #555; margin-top: 1rem;">
+                You will be redirected to the join page in <span id="countdown">20</span> seconds...
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="year">2025</span> Sierra Leone Chamber of Commerce</p>
+            <p>Developed by Bintu Lukulay<span aria-label="heart" role="img">❤️</span> | Last modified: <span
+                    id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

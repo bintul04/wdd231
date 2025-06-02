@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Toggle aria-expanded for accessibility
         const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true' || false;
         hamburgerBtn.setAttribute('aria-expanded', !expanded);
+        primaryNav.setAttribute('aria-expanded', !expanded);
     });
 });
   

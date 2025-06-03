@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --primary-color: #E91E63;
+    --secondary-color: #FCE4EC;
+    --text-color: #000000;
+    --max-width: 1200px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+header {
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: var(--white);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li::marker {
+    color: var(--primary-color);
+}
+
+a,
+button {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+a:hover,
+button:hover {
+    color: var(--extra-light);
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--text-light);
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

@@ -4,99 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Bintu Lukulay’s Web & Computer Programming course page, featuring project highlights, coursework, and a tribute to Freetown, Sierra Leone.">
+    <meta name="description" content="WDD 213 | Bintu Lukulay’s Web & Computer Programming course page, featuring project highlights, coursework, and a tribute to Freetown, Sierra Leone.">
     <meta name="author" content="Bintu Lukulay">
     <title>WDD Course Home Page</title>
     <!-- ✅ Open Graph Meta Tags -->
-    <meta property="og:title" WDD Course Home Page>
-    <meta property="og:description" Explore Bintu Lukulay’s Web & Computer Programming course page, featuring project highlights, coursework, and a tribute to Freetown, Sierra Leone.>
-    <meta property="og:image" https://bintul04.github.io/wdd231/images/profile.jpg>
-    <meta property="og:url" https://bintul04.github.io/wdd231/>
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" Web Frontend Development>
+    <meta property="og:description" content="Bintu Lukulay’s Web & Programming projects and a tribute to Freetown, Sierra Leone.">
+    <meta property="og:image" https://bintul04.github.io/wdd231/images/profile.jpg>
+    <meta property="og:url" https://bintul04.github.io/wdd231/>
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <div class="nav__header">
-                <div class="logo">
-                    <img src="images/profile.jpg" alt="Portrait of Bintu Lukulay" width="100" height="100">
-                </div>
-
-                <div class="nav__logo">
-                    <a href="#">Bintu Lukulay</a>
-                </div>
-
-                <div id="menu-btn" class="menu-icon" role="button" aria-label="Toggle navigation" aria-expanded="false"
-                    tabindex="0">
-                    <i class="ri-menu-line"></i>
-                </div>
+    <body data-new-gr-c-s-check-loaded="14.1238.0" data-gr-ext-installed="">
+        <header>
+            <!-- My logo -->
+            <div class="logo">
+                <img src="images/profile.jpg" alt="website-logo">
+                <span>Bintu Lukulay</span>
             </div>
-
-            <div class="nav__links" id="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="week2-chamber.html">Chamber</a>
-                <a href="week6-final.html">Final</a>
-                <a href="https://github.com/bintul04" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/bintul04" target="_blank">LinkedIn</a>
-            </div>
-        </nav>
-
+            <nav class="">
+                <!-- menu icon -->
+                <button id="menu" aria-label="menu-button" class=""></button>
+                <!-- page navigation -->
+                <ul class="">
+                    <li>
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="chamber" class="nav-link">Chamber</a>
+                    </li>
+                    <li><a href="finalproject" class="nav-link">Final</a></li>
+                    <li>
+                        <a href="https://github.com/bintul04" class="nav-link" target="_blank">GitHub Profile</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/bintu-lukulay-21534b323/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8k3bV898QH62vcwKedIIcQ%3D%3D" target="_blank" class="nav-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- main -->
         <main>
-            <h1>Bintu Lukulay | WDD Course Home Page</h1>
-            <h2>Home</h2>
-            <section class="course-and-freetown">
-             <div class="section-row">
-                <div class="card">
-                    <h3>Course Work</h3>
-                    <ul class="course-list">
+            <h1 class="heading">Home</h1>
+            <div class="cards">
+                <section>
+                    <h2>Course Work</h2>
+                    <ul>
                         <li></li>
                         <li></li>
                         <li></li>
                     </ul>
-                </div>
-
-                <div class="card">
-                    <h3>Freetown, Sierra Leone</h3>
-                    <img src="images/tree.jpg" srcset="images/cotton-small.jpg 400w, images/cotton.jpg 800w"
-                        sizes="(max-width: 600px) 100vw, 400px"
-                        alt="Historic Cotton Tree in central Freetown, Sierra Leone" width="400" height="300">
-                    <p>Cotton Tree</p>
-                </div>
-             </div>
-            </section>
-            <section class="certificate-section">
-                <div class="card">
-                    <h3>Web & Computer Programming Certificate</h3>
-                    <div class="course-buttons">
-                        <button id="all">All</button>
-                        <button id="cse">CSE</button>
-                        <button id="wdd">WDD</button>
+                </section>
+                <section>
+                    <h2>Freetown, Sierra Leone</h2>
+                    <figure>
+                        <img src="images/ft-ct.jpg" alt="Freetown">
+                        <figcaption>Cotton Tree</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h2>Web and Computer Programming Certificate</h2>
+                    <div class="certificates">
+                        <div class="buttons">
+                            <button class="btn" id="all">All</button>
+                            <button class="btn" id="cse">CSE</button>
+                            <button class="btn" id="wdd">WDD</button>
+                        </div>
+                        <hr>
+                        <p id="credits">The total number of credits required is 12</p>
+                        <div class="courses">
+                            <div class="course-card complete">
+                                <h3>CSE 110</h3>
+                            </div>
+                            <div class="course-card complete">
+                                <h3>WDD 130</h3>
+                            </div>
+                            <div class="course-card complete">
+                                <h3>CSE 111</h3>
+                            </div>
+                            <div class="course-card complete">
+                                <h3>CSE 210</h3>
+                            </div>
+                            <div class="course-card complete">
+                                <h3>WDD 131</h3>
+                            </div>
+                            <div class="course-card incomplete">
+                                <h3>WDD 231</h3>
+                            </div>
+                        </div>
+                        <dialog id="course-details">
+                            <div class="modal-content">
+                                <button class="close" onclick="modal.close()">❌</button>
+                                <h2>WDD 130</h2>
+                                <h3>Web Fundamentals</h3>
+                                <p>2 credits</p>
+                                <p>Certificate: Web and Computer Programming</p>
+                                <p>This course introduces students to the World Wide Web and to careers in web site design
+                                    and development. The course is hands on with students actually participating in simple
+                                    web designs and programming. It is anticipated that students who complete this course
+                                    will understand the fields of web design and development and will have a good idea if
+                                    they want to pursue this degree as a major.</p>
+                                <p>Technologies: HTML, CSS</p>
+                            </div>
+                        </dialog>
                     </div>
-                    <div id="courseGrid" class="course-grid"></div>
-
-                    <div id="creditsContainer">
-                        Total Credits Selected: <span id="totalCredits">0</span> 🎓
-                    </div>                    
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
-
+        <!-- footer -->
         <footer>
-            <p>&copy;<span id="year"></span> Bintu Lukulay 🌸 Freetown 🇸🇱</p>
-            <p id="lastUpdate"></p>
+            <p>
+                ©<span id="currentyear">2025</span> | Bintu Lukulay
+                | Sierra Leone <img class="flag" src="images/flag.webp" alt="flag">
+            </p>
+            <p id="lastModified">Last Modification: 06/03/2025 10:31:27</p>
         </footer>
-
-        <script src="scripts/navigation.js" defer></script>
-        <script src="scripts/date.js" defer></script>
-        <script src="scripts/course.js" defer></script>
-    </div>
-</body>
+    
+    
+    </body>
 
 </html>

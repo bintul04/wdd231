@@ -1,0 +1,298 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Top */
+
+header {
+    background-color: rgb(14, 30, 89);
+    justify-content: space-between;
+    display: flex;
+}
+
+Hamburger Settings
+
+#hamburger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    cursor: pointer;
+}
+
+#hamburger::before {
+    content: "☰";
+    color: black;
+}
+
+#hamburger.open::before {
+    content: "❌";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .5s ease-in-out;
+    text-align: center;
+    align-content: center;
+}
+
+.nav-container {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#mobile-nav.open {
+    grid-template-rows: 1fr;
+    transition: grid-template-rows .5s ease-out;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.216);
+    color: white;
+}
+
+.active {
+    color: rgb(37, 54, 37);
+}
+
+#desktop-nav {
+    display: none;
+}
+
+#mobile-nav {
+    background-color: rgb(153, 204, 217);
+}
+
+/* Hamburger End */
+
+#wrapper {
+    display: inline-flex;
+    align-items: end;
+    padding: 1rem;
+}
+
+#wrapper img {
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 2rem;
+}
+
+#wrapper span,
+#wrapper p {
+    text-align: end;
+    padding-left: 1rem;
+}
+
+#wrapper span {
+    font-size: 2rem;
+}
+
+
+
+/* Body */
+
+/* Top Image*/
+.container {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    /* display: grid; */
+}
+
+#hero-container {
+    overflow: hidden;
+    height: 30vw;
+    border-radius: 2vw 2vw 0 0;
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+#hero {
+    width: 100%;
+    height: 267px;
+    justify-content: center;
+    object-fit: cover;
+    display: none;
+}
+
+/* Tab Sections*/
+
+.tab {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .11);
+    height: 100%;
+}
+
+.tab h2 {
+    background-color: #a54242;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    height: auto;
+}
+
+.tab p {
+    padding: 2.5%;
+}
+
+/* Member Cards */
+
+.card>p {
+    text-align: center;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+/* .card div{
+    text-align: left;
+} */
+
+.member-cards,
+.spotlight-cards {
+    /* margin-top: 5%; */
+    justify-items: center;
+}
+
+.member-cards section,
+.spotlight-cards section {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .11);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 75%;
+    margin-top: 5%;
+}
+
+.member-cards #card-header,
+.spotlight-cards #card-header {
+    background-color: rgb(56, 61, 105);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.member-cards #card-content,
+.spotlight-cards #card-content {
+    display: inline-flex;
+    align-content: end;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.member-cards #card-content #card-text,
+.spotlight-cards #card-content #card-text {
+    margin-left: 10px;
+}
+
+.member-cards #card-content #card-text a,
+.spotlight-cards #card-content #card-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.member-cards h2,
+.spotlight-cards h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.member-cards #card-header p,
+.spotlight-cards #card-header p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.member-cards img,
+.spotlight-cards img {
+    border-radius: 50%;
+}
+
+
+
+/* List Layout */
+
+#list-toggle {
+    /* Button Class for List */
+    background: none;
+    background-color: rgb(153, 204, 217);
+    border: solid rgb(68, 101, 109);
+    border-radius: 10%;
+    margin-top: 5%;
+}
+
+.list {
+    /* Changes from grid display to block */
+    display: block !important;
+}
+
+.list img {
+    /* Removes the image from the display */
+    display: none;
+}
+
+.member-cards.list section {
+    /* Adds border to section in list format */
+    border: solid rgba(0, 0, 0, 0.39);
+    border-radius: 8px;
+}
+
+.member-cards.list section #card-header {
+    /* Adds border to heading in list format */
+    border-bottom: solid rgba(0, 0, 0, 0.39);
+}
+
+.list-button {
+    /*Changed the button look when toggled*/
+    background: none;
+    background-color: rgb(165, 66, 66) !important;
+    border: solid rgb(87, 28, 28) !important;
+    color: white;
+}
+
+#list-toggle:hover {
+    background-color: black !important;
+    color: white;
+}
+
+.list-button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Bottom */
+
+footer {
+    background-color: rgb(153, 204, 217);
+    text-align: center;
+    padding: .5rem;
+    margin-top: 5%;
+}

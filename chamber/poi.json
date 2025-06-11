@@ -1,0 +1,68 @@
+{
+    "poi": [
+        {
+            "name": "Mhizz Bie's Fashion",
+            "image": "images/fashion.jpg",
+            "loading": "eager",
+            "address": "197 Black Hall Road Kissy Freetown",
+            "description": "Mhizz Bie's Fashion Boutique offers elegant, trendy styles that celebrate every woman’s unique beauty. Each piece is carefully curated to inspire confidence, class, and individuality. It’s more than a boutique—it’s a fashion experience made with love.",
+            "url": "https://bintul04.github.io/wdd231/chamber/fashion.html"
+        },
+        {
+            "name": "Freetown Market",
+            "image": "images/Freetown_street_market.jpg",
+            "loading": "eager",
+            "address": "Bustling market street (Sani Abacha st.) in central Freetown, Sierra Leone",
+            "description": "Sani Abacha Street in central Freetown is a lively, bustling market hub pulsing with energy and everyday hustle. Vendors line both sides of the narrow street, their colorful stalls overflowing with everything from vibrant African prints, shoes, and electronics to fresh produce and household goods.",
+            "url": "http://www.sewa.news/2014/01/sierra-leone-is-abacha-street-taking.html"
+        },
+        {
+            "name": "Sierra Leone, Freetown Central Prison",
+            "image": "images/central prison.jpg",
+            "loading": "eager",
+            "address": "Pademba Road in Freetown, Sierra Leone",
+            "description": "Freetown Central Prison, commonly known as Pademba Road Prison, is a prison on Pademba Road in Freetown, Sierra Leone. The prison was built to house 220 prisoners in the pre-independence era and now holds around 2,000 prisoners.",
+            "url": "https://en.wikipedia.org/wiki/Freetown_Central_Prison"
+        },
+        {
+            "name": "Sierra Leone Tourism",
+            "image": "images/beach.jpg",
+            "loading": "lazy",
+            "address": "Lumley Beach Road, Freetown, P.O. Box 1435",
+            "description": "River Number Two Beach is a beautiful, quiet spot with clean sand and clear water. It’s perfect for swimming and relaxing away from the city noise. More tourists are discovering its charm, boosting Sierra Leone’s growing appeal.",
+            "url": "https://tourismsierraleone.com/"
+        },
+        {
+            "name": "Banana Island",
+            "image": "images/banana_island.jpg",
+            "loading": "lazy",
+            "address": "Banana Island, Sierra Leone",
+            "description": "One of the easiest getaways from Freetown, the three Banana Islands are the perfect place to escape the bustling capital in search of slow-paced island life, with wide sandy beaches, luxuriant nature, and rich historical heritage.",
+            "url": "https://tourismsierraleone.com/attractions/banana-islands/"
+        },
+        {
+            "name": "The Sierra Leone Supreme Court of Justice",
+            "image": "images/supreme.jpg",
+            "loading": "lazy",
+            "address": "Law Courts Building Cotton Tree",
+            "description": "The Supreme Court of Sierra Leone is the highest court in Sierra Leone. It has final jurisdiction in all civil, criminal, and constitutional cases within Sierra Leone, and its decisions cannot be appealed. The Supreme Court has the exclusive constitutional power to overturn rulings of lower courts within the jurisdiction of Sierra Leone.",
+            "url": "https://www.judiciary.gov.sl/"
+        },
+        {
+            "name": "Sierra Leone Museum",
+            "image": "images/museum.jpg",
+            "loading": "lazy",
+            "address": "About Freetown Historic Monuments",
+            "description": "The 15 historic monuments in and around Freetown, Sierra Leone, represent almost the entirety of the nation's preserved cultural assets. One of the most significant of these sites is Fourah Bay College, founded in 1827 as the first higher-education institution in West Africa.",
+            "url": "https://www.wmf.org/monuments/freetown-historic-monuments"
+        },
+        {
+            "name": "Sierra Leone Hotels and Places to Stay",
+            "image": "images/hotels.jpg",
+            "loading": "lazy",
+            "address": "Freetown, Sierra Leone",
+            "description": "Freetown offers a variety of hotels ranging from beach resorts to boutique guesthouses, perfect for any type of traveler. Whether you're seeking luxury or local charm, you'll find a welcoming place to rest and recharge.",
+            "url": "https://www.tripadvisor.com/ClientLink?value=cnk1Xy9Ib3RlbHMtZzI5MzgzMy1GcmVldG93bl9XZXN0ZXJuX0FyZWEtSG90ZWxzLmh0bWxfckN6"
+        }
+    ]
+}

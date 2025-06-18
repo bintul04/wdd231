@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+:root {
+    --primary-color: #E91E63;
+    --text-dark: #000000;
+    --text-light: #737373;
+    --extra-light: #f4f6f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+body {
+    background: url('../images/favorite-4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--white);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    background: url('../images/Sale-2.jpg') no-repeat center center fixed;
+    color: var(--text-dark);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid var(--text-dark);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px #FCE4EC;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #FCE4EC;
+}
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid var(--text-light);
+}
+
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}

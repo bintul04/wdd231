@@ -1,0 +1,64 @@
+{
+    "catalogue": [
+        {
+            "image": "images/cata-1.jpg",
+            "title": "Elegant Purple Black Wing Dress",
+            "price": 99.99,
+            "rating": 1
+        },
+        {
+            "image": "images/cata-2.jpg",
+            "title": "Avant-garde Red Gown",
+            "price": 129.99,
+            "rating": 1
+        },
+        {
+            "image": "images/cata-3.jpg",
+            "title": "Green Wrap Dress",
+            "price": 89.99,
+            "rating": 2
+        },
+        {
+            "image": "images/cata-4.jpg",
+            "title": "Stylish Floral Blazer",
+            "price": 74.99,
+            "rating": 3
+        },
+        {
+            "image": "images/cata-5.jpg",
+            "title": "Shimmering Blue Red Carpet Gown",
+            "price": 539.99,
+            "rating": 3
+        },
+        {
+            "image": "images/cata-6.jpg",
+            "title": "Shimmering Blue Red Carpet Gown",
+            "price": 539.99,
+            "rating": 3
+        },
+        {
+            "image": "images/cata-7.jpg",
+            "title": "Short Silver Purple Dress",
+            "price": 249.99,
+            "rating": 2
+        },
+        {
+            "image": "images/cata-8.jpg",
+            "title": "Short Silver Pink Dress",
+            "price": 149.99,
+            "rating": 2
+        },
+        {
+            "image": "images/cata-9.jpg",
+            "title": "Red Date Night & Corporate Gown",
+            "price": 89.99,
+            "rating": 2
+        },
+        {
+            "image": "images/cata-10.jpg",
+            "title": "Chic Handmade Evening Dress",
+            "price": 79.99,
+            "rating": 2
+        }
+    ]
+}
